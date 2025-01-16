@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary-color: #ff6500;
+  --secoundry-color: #fff4b7;
+  --third-color: #181c14;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+
+section:not(.profile) {
+  padding: 30px;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 80px 0px;
+}
+section .edu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secoundry-color);
+  font-size: 23px;
+  gap: 70px 0px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section .edu p {
+  font-size: 16px;
+}
+
+.section .cert {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px 0px;
+  color: var(--secoundry-color);
+}
+.section .title h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.section p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 2;
+  text-align: start;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-info p {
+  width: 50%;
+}
+
+.about_img {
+  width: 30%;
+  height: 100%;
+  background-color: #181c14;
+  border-radius: 10px;
+}
+
+.about_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.info-ul-left {
+  width: 48%;
+}
+
+.info-ul-left .inside-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.info-ul-left .inside-title span {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 7px;
+  color: var(--primary-color);
+}
+
+.info-ul-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.info-ul-left ul li::before {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: -6px;
+  margin-top: 6px;
+  z-index: 1000;
+}
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--third-color);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  background-color: #ff6500;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 10px var(--secoundry-color);
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+header nav ul li:hover {
+  transition: transform 0.4s;
+  transform: scale(1.09);
+}
+
+header nav ul li a:hover {
+  color: var(--secoundry-color);
+  transition: color 0.2s;
+}
+
+header nav .name {
+  color: var(--secoundry-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* profile section */
+
+.profile {
+  background-color: var(--third-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px 0px;
+  width: 48%;
+}
+
+.sammary {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  gap: 20px 0px;
+  padding-right: 70px;
+}
+
+.sammary h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.sammary p {
+  color: var(--secoundry-color);
+  line-height: 2;
+}
+
+.profile .img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px dotted var(--primary-color);
+}
+
+.profile .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.Tname {
+  padding-left: 10px;
+  p {
+    font-size: 35px;
+    color: var(--secoundry-color);
+  }
+}
+
+.social_Links {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 20px;
+}
+
+.social_Links a i {
+  color: var(--primary-color);
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+.social_Links a i:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+  color: var(--secoundry-color);
+}
+
+#about {
+  background-color: var(--secoundry-color);
+}
+
+#education {
+  background-color: var(--third-color);
+}
+
+#experince {
+  background-color: var(--secoundry-color);
+}
+
+#certification {
+  background-color: var(--third-color);
+}
